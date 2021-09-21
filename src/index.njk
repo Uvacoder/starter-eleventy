@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Blank Slate v2
+description: My cool webpage.
+bodyClass: home
+---
+
+<h1>Hello, {{ title }}!</h1>
+
+<ul>
+     {% for item in list.items %}
+     <li>{{ item.name | markdown | safe }}</li>
+     {% endfor %}
+</ul>
+
+<p>View <a href="/gallery/">the gallery</a> for an example of responsive images.</p>
